@@ -83,8 +83,6 @@ ex : `--file ../myLog 2.0 50`
 Output messages to stdout.
 ***No arguments.***
 `--display`
----
-You can combine almost as many messengers as you want in command line.
 
 
 ## Thanks to 
