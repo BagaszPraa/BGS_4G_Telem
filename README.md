@@ -86,6 +86,8 @@ Output messages to stdout.
 ***No arguments.***
 `--display`
 
+## Tested
+### Raspi OS (Debian Bookworm)
 
 ## Thanks to 
 ### ZeroTier  : Online Server
