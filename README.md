@@ -1,21 +1,7 @@
-# MAVKit
+# BGS_4G_Telem
 
 ## Introduction
-
-MAVkit is a C++ toolbox for **MAVLink 2.0** in command line.
-
- It can **display**, **redirect**, **broadcast**, **log**, **replay** data from and to different types of interface (**Serial**, **UDP**, **TCP**, **File**).
-
-MAVkit is also a framework for MAVLink programmers.
-It is built on a modular architecture where each module can be used independently inside other projects.
-In that case, it provides a simple MAVLink block that can be replaced according to communication hardware.
-
-Designed with low latency in mind, it keeps IO buffers safe from overflows (leading to data loss) by using a dual thread processing loop per interface (fast read and process).
-
-## Build
-
-### Submodule update
->Note : Be sure to use the following recursive command, there is two submodule levels in mavlink.
+Tutorial Building BGS_4G_Telem
 
 ```Shell
 git submodule update --init --recursive
@@ -30,24 +16,6 @@ cd build
 cmake ..
 make
 ```
-
-## How it works ?
-
-Mavkit is organised in modules called **messengers**. A messenger can receive and send messages to others in a fully concurrent way.
-
-Each messenger can be either a serial link, an UDP socket, a log file,...
-
-you have to specify at least one messenger (the first) for the role of **master**.
-This particular one will be duplex connected to every other messenger created then.
-On the contrary, secondary messengers won't be connected between them.
-
-Here is an example of two MAVkit instances, composed of respectively 4 and 2 messengers and linked between them through UDP. Note that masters are connected to all other messengers, while those are not linked between them.
-
-<img src="/docs/mavkit_interfaces.jpg" />
-
-## How to use it ?
-
-Once you've built it, you can run MAVKit from command line by specifying messengers one after the other.
 
 The first messenger will take on the role of master.
 
