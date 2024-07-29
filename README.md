@@ -37,6 +37,12 @@ ZeroTier akan selalu otomatis berjalan setelah boot. jika mau mengganti netowrk 
 commandd : `sudo zerotier-cli join <network_id>`
 
 ## 5. Start BGS_4G_Telem
+Contoh : FCU terhubung ke /dev/ttyUSB0 dan mengirimkan data telemetri ke UDP 192.168.168.16 port 14550 
+alamat IP bisa dilihat di Network ZeroTier yang digunakan 
+```Shell
+./BGS_4G_Telem --tty 57600 /dev/ttyUSB0 --udp_client 192.168.168.16 14550
+```
+### Selengkapnya Bisa dilihat Di Bawah ini
 ### Serial
 * ***baudrate*** -> baudrate.
 * ***device*** -> path of a tty device.
@@ -79,11 +85,6 @@ Output messages to stdout.
 ---
 You can combine almost as many messengers as you want in command line.
 
-Contoh : FCU terhubung ke /dev/ttyUSB0 dan mengirimkan data telemetri ke UDP 192.168.168.16 port 14550 
-alamat IP bisa dilihat di Network ZeroTier yang digunakan 
-```Shell
-./BGS_4G_Telem --tty 57600 /dev/ttyUSB0 --udp_client 192.168.168.16 14550
-```
 
 ## Thanks to 
 ### ZeroTier  : Online Server
