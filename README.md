@@ -26,6 +26,7 @@ cmake ..
 make
 ```
 ## 4. Start ZeroTier Service
+sebelumnya buatlah dulu network di ZeroTier
 Ganti <network_id> dengan network anda sendiri ex: 56374ac9a43b489f
 ```shell
 sudo systemctl start zerotier-one
