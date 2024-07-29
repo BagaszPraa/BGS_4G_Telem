@@ -33,7 +33,8 @@ sudo systemctl enable zerotier-one
 sudo zerotier-cli join <network_id>
 sudo zerotier-cli status
 ```
-ZeroTier akan selalu otomatis berjalan setelah boot. jika mau mengganti netowrk bisa langsung ganti dengan perintah sudo zerotier-cli join <network_id>
+ZeroTier akan selalu otomatis berjalan setelah boot. jika mau mengganti netowrk bisa langsung ganti dengan perintah 
+`sudo zerotier-cli join <network_id>`
 
 ## 5. Start BGS_4G_Telem
 ### Serial
