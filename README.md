@@ -3,8 +3,13 @@
 ## Introduction
 Tutorial Building BGS_4G_Telem
 
-## 1. Install Dependencies CMake & C++ Build Environment
-
+## 1. Install Dependencies CMake & C++ Build Environment & Python Packages
+Install C & C++ Build Environment
+```Shell
+sudo apt-get update
+sudo apt install cmake build-essential libboost-all-dev
+```
+Install Python Packages
 ```Shell
 sudo apt-get update
 sudo apt install cmake build-essential libboost-all-dev
