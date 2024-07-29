@@ -3,11 +3,15 @@
 ## Introduction
 Tutorial Building BGS_4G_Telem
 
+## 1. Install Dependencies CMake & C++ Build Environment
 ```Shell
-git submodule update --init --recursive
+tes
+tes
+tes
+tes
 ```
 
-### Compilation
+### 3. Build and Complie
 ***Dependencies*** : Boost + MAVLink usual dependencies
 
 ```shell
