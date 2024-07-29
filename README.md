@@ -4,14 +4,11 @@
 Tutorial Building BGS_4G_Telem
 
 ## 1. Install Dependencies CMake & C++ Build Environment
+
 ```Shell
 sudo apt-get update
 sudo apt install cmake build-essential libboost-all-dev
 
-tes
-tes
-tes
-tes
 ```
 ## 2. Install ZeroTier
 
@@ -20,7 +17,7 @@ curl -s https://install.zerotier.com | sudo bash
 sudo apt install zerotier-one
 
 ```
-### 3. Build and Compile
+## 3. Build and Compile
 ***Dependencies*** : Boost + MAVLink usual dependencies
 
 ```shell
@@ -31,7 +28,8 @@ cd build
 cmake ..
 make
 ```
-### 4. Start ZeroTier Service
+## 4. Start ZeroTier Service
+Ganti <network_id> dengan network anda sendiri ex: 56374ac9a43b489f
 ```shell
 sudo systemctl start zerotier-one
 sudo systemctl enable zerotier-one
