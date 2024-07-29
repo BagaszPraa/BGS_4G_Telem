@@ -8,18 +8,15 @@ Tutorial Building BGS_4G_Telem
 ```Shell
 sudo apt-get update
 sudo apt install cmake build-essential libboost-all-dev
-
 ```
 ## 2. Install ZeroTier
 
 ```Shell
 curl -s https://install.zerotier.com | sudo bash
 sudo apt install zerotier-one
-
 ```
-## 3. Build and Compile
-***Dependencies*** : Boost + MAVLink usual dependencies
 
+## 3. Build and Compile
 ```shell
 cd
 cd BGS_4G_Telem
@@ -36,8 +33,15 @@ sudo systemctl enable zerotier-one
 sudo zerotier-cli join <network_id>
 sudo zerotier-cli status
 ```
+ZeroTier akan selalu otomatis berjalan setelah boot. jika mau mengganti netowrk bisa langsung ganti dengan perintah sudo zerotier-cli join <network_id>
 
-The first messenger will take on the role of master.
+## 5. Start BGS_4G_Telem
+Contoh : FCU terhubung ke /dev/ttyUSB0 dan mengirimkan data telemetri ke UDP 192.168.168.16 port 14550 
+alamat IP bisa dilihat di Network ZeroTier yang digunakan 
+```Shell
+./BGS_4G_Telem --tty 57600 /dev/ttyUSB0 --udp_client 192.168.168.16 14550
+```
+### Selengkapnya
 
 ### Serial
 ***Arguments :***
@@ -93,14 +97,12 @@ ex : `--file ../myLog 2.0 50`
 Output messages to stdout.
 
 ***No arguments.***
-
 `--display`
-
 ---
 You can combine almost as many messengers as you want in command line.
 
-Example :
+## Thanks to 
+### ZeroTier  : Online Server
+### MAVkit    : Mavlink Converter
+### MavLink   : Protocol Communication
 
-```Shell
-./mavkit --tty 57600 /dev/ttyACM0 --udp_server 14550 --display --log --tcp_client 127.0.0.1 14551
-```
