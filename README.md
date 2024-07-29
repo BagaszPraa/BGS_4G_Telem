@@ -12,7 +12,8 @@ sudo apt install cmake build-essential libboost-all-dev
 Install Python Packages
 ```Shell
 sudo apt-get update
-sudo apt install cmake build-essential libboost-all-dev
+sudo apt install python3-pip
+pip3 install future --break-system-packages
 ```
 ## 2. Install ZeroTier
 
