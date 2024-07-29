@@ -15,6 +15,8 @@ tes
 ***Dependencies*** : Boost + MAVLink usual dependencies
 
 ```shell
+cd
+cd BGS_4G_Telem
 mkdir build
 cd build
 cmake ..
@@ -25,10 +27,10 @@ The first messenger will take on the role of master.
 
 ### Serial
 ***Arguments :***
-* ***device*** -> path of a tty device.
 * ***baudrate*** -> baudrate.
+* ***device*** -> path of a tty device.
 
-ex : `--tty /dev/ttyUSB0 57600`
+ex : `--tty 57600 /dev/ttyUSB0`
 
 ### UDP server
 ***Arguments :***
