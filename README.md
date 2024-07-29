@@ -40,7 +40,8 @@ commandd : `sudo zerotier-cli join <network_id>`
 Contoh : FCU terhubung ke /dev/ttyUSB0 dan mengirimkan data telemetri ke UDP 192.168.168.16 port 14550 
 alamat IP bisa dilihat di Network ZeroTier yang digunakan 
 ```Shell
-./BGS_4G_Telem --tty 57600 /dev/ttyUSB0 --udp_client 192.168.168.16 14550
+cd
+.BGS_4G_Telem/build/BGS_4G_Telem --tty 57600 /dev/ttyUSB0 --udp_client 192.168.168.16 14550
 ```
 ### Selengkapnya Bisa dilihat Di Bawah ini
 ### Serial
