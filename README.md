@@ -35,7 +35,8 @@ sudo zerotier-cli join <network_id>
 sudo zerotier-cli status
 ```
 ZeroTier akan selalu otomatis berjalan setelah boot. jika mau mengganti netowrk bisa langsung ganti dengan perintah
-commandd : `sudo zerotier-cli join <network_id>`
+
+command : `sudo zerotier-cli join <network_id>`
 
 ## 5. Start BGS_4G_Telem
 Contoh : FCU terhubung ke /dev/ttyUSB0 dan mengirimkan data telemetri ke UDP 192.168.168.16 port 14550 
